@@ -9,7 +9,9 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
+  image,
   description,
+
   tags,
   title,
   helmet,
@@ -28,6 +30,7 @@ export const BlogPostTemplate = ({
               {title}
               </span>
             </h1>
+         
             <p>{description}</p>
             <PostContent content={content} />
             {tags && tags.length ? (
@@ -50,6 +53,7 @@ export const BlogPostTemplate = ({
 }
 
 BlogPostTemplate.propTypes = {
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -65,6 +69,7 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
+        image={post.frontmatter.image}
         description={post.frontmatter.description}
         helmet={
           <Helmet
@@ -95,8 +100,15 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+       
         title
+        image {
+          childImageSharp {
+            fluid(maxWidth: 2048, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         description
         tags
       }
