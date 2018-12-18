@@ -35,7 +35,7 @@ const Navbar = class extends React.Component {
     <div className="container">
       <div className="navbar-brand">
         <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+          <img src={logo} alt="fourtwofour" style={{ width: '64px' }} />
         </Link>
         {/* Hamburger menu */}
         <div className="navbar-burger burger" data-target="navMenu">
@@ -45,25 +45,41 @@ const Navbar = class extends React.Component {
         </div>
       </div>
       <div id="navMenu" className="navbar-menu">
-      <div className="navbar-start has-text-centered">
-      <Link className="navbar-item" to="/">
+      <div className="navbar-start has-text-left">
+      <Link className="navbar-item" to="/" activeStyle={{
+        color: "black",
+        "background-color": "red",
+      }}
+    >
       News
     </Link>  
-      <Link className="navbar-item" to="/about">
+      <Link className="navbar-item" to="/about" activeStyle={{
+        color: "black",
+        "background-color": "red",
+      }}>
           About
         </Link>
-        <Link className="navbar-item" to="/products">
+        <Link className="navbar-item" to="/products" activeStyle={{
+          color: "black",
+          "background-color": "red",
+        }}>
           Lookbook
         </Link>
-        <Link className="navbar-item" to="/contact">
+        <Link className="navbar-item" to="/contact" activeStyle={{
+          color: "black",
+          "background-color": "red",
+        }}>
         Stockist
         </Link>
-        <Link className="navbar-item" to="/contact/examples">
+        <Link className="navbar-item" to="/contact/examples" activeStyle={{
+          color: "black",
+          "background-color": "red",
+        }}>
          Store
         </Link>
       </div>
   
-      <div className="navbar-end has-text-centered">
+      <div className="navbar-end">
       <a
   className="navbar-item"
           href="https://twitter.com/424onFAIRFAX"
