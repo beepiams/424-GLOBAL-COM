@@ -14,9 +14,22 @@ Link to  https://shop.fourtwofouronfairfax.com/collections/424
 
 About (Potentially add an about page
 
+     <div className="navbar-end has-text-centered">
+        <a
+          className="navbar-item"
+          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+      
+    
+        <span className="icon">
+        <img src={github} alt="Github" />
+         </span> 
+        </a>
+       
+      </div> 
 
-    // <span className="icon">
-        //     <img src={github} alt="Github" />
-        //   </span> 
+      
 
         2016-12-17-making-sense-of-the-scaas-new-flavor-wheel

@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-2"><span style={{ "background-color": `red` }}>FOURTWOFOURnews</span></h1>
+              <h1 className="has-text-weight-bold is-size-3"><span style={{ "background-color": `red` }}>FOURTWOFOURnews</span></h1>
           
             </div>
             {posts

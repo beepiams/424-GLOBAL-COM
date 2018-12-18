@@ -62,18 +62,33 @@ const Navbar = class extends React.Component {
          Store
         </Link>
       </div>
-       <div className="navbar-end has-text-centered">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
+  
+      <div className="navbar-end has-text-centered">
+      <a
+  className="navbar-item"
+          href="https://twitter.com/424onFAIRFAX"
           target="_blank"
           rel="noopener noreferrer"
-        >
-       
-    
-          
-        </a>
-      </div> 
+      >tw</a>
+      <a
+      className="navbar-item"
+              href="https://www.facebook.com/424onFairfax"
+              target="_blank"
+              rel="noopener noreferrer"
+          >fb</a>
+          <a
+          className="navbar-item"
+                  href="https://www.instagram.com/fourtwofouronfairfax/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >ig</a>
+              <a
+              className="navbar-item"
+                      href="http://424onfairfax.tumblr.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                  >tb</a>
+      </div>
       </div>
     </div>
   </nav>
