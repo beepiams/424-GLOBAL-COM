@@ -125,6 +125,7 @@ ProductPageTemplate.propTypes = {
   }),
   testimonials: PropTypes.array,
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  fullImage2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
     heading: PropTypes.string,
     description: PropTypes.string,
