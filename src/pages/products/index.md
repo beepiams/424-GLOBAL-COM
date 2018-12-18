@@ -1,7 +1,7 @@
 ---
 templateKey: 'product-page'
 path: /products
-title: Our Coffee
+title: 424 FW_18
 image: /img/002-FW18-Lookbook/Shot-10-_014.jpg
 heading: What we offer
 description: >-
