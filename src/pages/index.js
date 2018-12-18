@@ -25,7 +25,9 @@ export default class IndexPage extends React.Component {
                 >
                   <p>
                     <Link className="has-text-primary" to={post.fields.slug}>
-                      {post.frontmatter.title}
+                    <span style={{ "background-color": `red` }}>
+                         {post.frontmatter.title}
+                    </span>
                     </Link>
                     <span> &bull; </span>
                     <small>{post.frontmatter.date}</small>
