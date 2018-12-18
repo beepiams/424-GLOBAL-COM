@@ -13,3 +13,8 @@ Online Store
 Link to  https://shop.fourtwofouronfairfax.com/collections/424
 
 About (Potentially add an about page
+
+
+    // <span className="icon">
+        //     <img src={github} alt="Github" />
+        //   </span> 
