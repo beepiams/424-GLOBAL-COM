@@ -9,9 +9,8 @@ import Content, { HTMLContent } from '../components/Content'
 export const BlogPostTemplate = ({
   content,
   contentComponent,
-  image,
   description,
-
+  image,
   tags,
   title,
   helmet,
@@ -24,12 +23,28 @@ export const BlogPostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-            <span style={{ "background-color": `red` }}>
+            <div
+            className="full-width-image-container margin-top-0"
+            style={{
+              backgroundImage: `url(${
+                !!image.childImageSharp
+                  ? image.childImageSharp.fluid.src
+                  : image
+              })`,
+            }}
+          >
+            <h2
+              className="has-text-weight-bold is-size-1"
+              style={{
+                boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+                backgroundColor: '#e30001',
+                color: 'black',
+                padding: '1rem',
+              }}
+            >
               {title}
-              </span>
-            </h1>
+            </h2>
+          </div>
          
             <p>{description}</p>
             <PostContent content={content} />
@@ -69,7 +84,7 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        image={post.frontmatter.image}
+        
         description={post.frontmatter.description}
         helmet={
           <Helmet
@@ -81,6 +96,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
       />
     </Layout>
   )
@@ -100,7 +116,6 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-       
         title
         image {
           childImageSharp {

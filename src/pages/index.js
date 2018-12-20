@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+
 import Layout from '../components/Layout'
 
 export default class IndexPage extends React.Component {
@@ -13,8 +14,9 @@ export default class IndexPage extends React.Component {
         <section className="section">
           <div className="container">
             <div className="content">
-              <h1 className="has-text-weight-bold is-size-3"><span style={{ "background-color": `red` }}>FOURTWOFOURnews</span></h1>
-          
+              <h1 className="has-text-weight-bold is-size-3">
+                <span style={{ "background-color": `red` }}>424 NEWS</span>
+              </h1>
             </div>
             {posts
               .map(({ node: post }) => (
@@ -27,7 +29,9 @@ export default class IndexPage extends React.Component {
                     <Link style={{ "background-color": 'red'}} className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                     </Link>
-                    <span> &bull; </span>
+                  
+       
+                
                     <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
@@ -57,24 +61,51 @@ IndexPage.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-    ) {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          id
+          excerpt
           fields {
             slug
           }
           frontmatter {
+            date(formatString: "DD MMMM, YYYY")
             title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
+           
           }
         }
       }
     }
   }
 `
+// original //
+
+// export const pageQuery = graphql`
+//   query IndexQuery {
+//     allMarkdownRemark(
+//       sort: { order: DESC, fields: [frontmatter___date] },
+//       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+//     ) {
+//       edges {
+//         node {
+//           excerpt(pruneLength: 400)
+//           id
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             title
+//             templateKey
+//             date(formatString: "MM/DD/YYYY")
+          
+//           }
+//         }
+//       }
+//     }
+//   }
+// `

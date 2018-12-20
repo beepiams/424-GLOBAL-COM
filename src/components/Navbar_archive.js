@@ -3,14 +3,8 @@ import { Link } from 'gatsby'
 // import github from '../img/github-icon.svg'
 import logo from '../img/424_logo.svg'
 
-import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = class extends React.Component {
-
-  showSettings (event) {
-    event.preventDefault();
-
-  }
 
   componentDidMount() {
     // Get all "navbar-burger" elements
@@ -38,34 +32,55 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
     <div className="container">
-    <Menu left>
-     <Link className="navbar-item" to="/" 
+      <div className="navbar-brand">
+        <Link to="/" className="navbar-item" title="Logo">
+          <img src={logo} alt="fourtwofour" style={{ width: '40px' }} />
+        </Link>
+        {/* Hamburger menu */}
+        <div className="navbar-burger burger" data-target="navMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div id="navMenu" className="navbar-menu">
+      <div className="navbar-start has-text-left">
+      <Link className="navbar-item" to="/" 
       activeStyle={{ color: "black", "background-color": "red" }}   
-    >News</Link>  
-    <Link className="navbar-item" to="/about" 
-    activeStyle={{
-      color: "black",
-      "background-color": "red",
-    }}>About</Link>
-      <Link className="navbar-item" to="/products" 
+    >
+      News
+    </Link>  
+      <Link className="navbar-item" to="/about" 
       activeStyle={{
         color: "black",
         "background-color": "red",
-      }}>Lookbook</Link>
-      <Link className="navbar-item" to="/contact" 
-      activeStyle={{
-        color: "black",
-        "background-color": "red",
-      }}>Stockist</Link>
-      <a
-      className="navbar-item"
-              href="https://shop.fourtwofouronfairfax.com"
-              target="_blank"
-              rel="noopener noreferrer"
-          >Shop</a>
+      }}>
+          About
+        </Link>
+        <Link className="navbar-item" to="/products" 
+        activeStyle={{
+          color: "black",
+          "background-color": "red",
+        }}>
+          Lookbook
+        </Link>
+        <Link className="navbar-item" to="/contact" 
+        activeStyle={{
+          color: "black",
+          "background-color": "red",
+        }}>
+        Stockist
+        </Link>
+        <a
+        className="navbar-item"
+                href="https://shop.fourtwofouronfairfax.com"
+                target="_blank"
+                rel="noopener noreferrer"
+            >Shop</a>
+      </div>
+  
       <div className="navbar-end">
       <a
   className="navbar-item"
@@ -92,16 +107,8 @@ const Navbar = class extends React.Component {
                       rel="noopener noreferrer"
                   >tb</a>
       </div>
-    </Menu>
-
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="fourtwofour" style={{ width: '65px' }} />
-        </Link>
-       
       </div>
-    
-      </div>
+    </div>
   </nav>
   )}
 }

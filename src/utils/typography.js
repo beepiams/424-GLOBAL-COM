@@ -3,14 +3,14 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-    "Avenir Next",
+  "SuisseIntl-Bold.otf",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["Georgia", "serif"],
+  bodyFontFamily: ["../static/fonts/SuisseIntl-Regular.otf", "sans-serif"],
 })
 
 export default typography

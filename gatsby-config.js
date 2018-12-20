@@ -7,6 +7,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     {
+      resolve: `gatsby-plugin-styled-components`,
+      options: {
+        // Add any options here
+      },
+    },
+    {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -15,11 +21,20 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-          pathToConfigModule: `src/utils/typography`,
+        custom: {
+          families: ['suisse_intlbold', 'suisse_intlregular'],
+          urls: ['static/fonts/fonts.css']
         }
+      }
     },
+    // {
+    //   resolve: `gatsby-plugin-typography`,
+    //   options: {
+    //       pathToConfigModule: `src/utils/typography`,
+    //     }
+    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
