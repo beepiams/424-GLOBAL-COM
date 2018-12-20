@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
@@ -29,9 +30,7 @@ export default class IndexPage extends React.Component {
                     <Link style={{ "background-color": 'red'}} className="has-text-primary" to={post.fields.slug}>
                          {post.frontmatter.title}
                     </Link>
-                  
-       
-                
+                   <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} /> 
                     <small>{post.frontmatter.date}</small>
                   </p>
                   <p>
@@ -66,17 +65,27 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] },
+             filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
+           ) {
       edges {
         node {
           excerpt
+          id
           fields {
             slug
           }
           frontmatter {
             date(formatString: "DD MMMM, YYYY")
             title
-           
+            featuredImage {
+              childImageSharp{
+                  sizes(maxWidth: 630) {
+                      ...GatsbyImageSharpSizes
+                  }
+              }
+          }
           }
         }
       }
@@ -102,7 +111,13 @@ export const pageQuery = graphql`
 //             title
 //             templateKey
 //             date(formatString: "MM/DD/YYYY")
-          
+//             featuredImage {
+//               childImageSharp {
+//                   sizes(maxWidth: 630) {
+//                       ...GatsbyImageSharpSizes
+//                   }
+//               }
+//             }
 //           }
 //         }
 //       }

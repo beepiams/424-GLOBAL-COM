@@ -1,15 +1,13 @@
 ---
 templateKey: blog-post
 title: 424 X Hummel
-image: /img/001-424xHummel/001Y_A.jpg
-date: 2016-12-17T15:04:10.000Z
+featuredImage: /img/001-424xHummel/001Y_A.jpg
+date: 2018-12-11
 description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
 tags:
   - brewing
   - chemex
 ---
-This is the preview message excerpt
-
 ![flavor wheel](/img/001-424xHummel/001Y_A.jpg)
 ![flavor wheel](/img/001-424xHummel/001Y_B.jpg)
 ![flavor wheel](/img/001-424xHummel/002Y_A.jpg)

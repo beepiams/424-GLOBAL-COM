@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 // import github from '../img/github-icon.svg'
 import logo from '../img/424_logo.svg'
 
-import { stack as Menu } from 'react-burger-menu'
+import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = class extends React.Component {
 
@@ -110,9 +110,9 @@ export default Navbar
 var styles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '60px',
+    width: '56px',
     height: '22px',
-    left: '30px',
+    left: '26px',
     top: '40px'
   },
   bmBurgerBars: {
@@ -141,6 +141,10 @@ var styles = {
     display: 'inline-block'
   },
   bmOverlay: {
+    background: 'rgba(0, 0, 0, 0.3)'
+  },
+
+  navbaritem: {
     background: 'rgba(0, 0, 0, 0.3)'
   },
 }

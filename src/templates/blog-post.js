@@ -10,7 +10,7 @@ export const BlogPostTemplate = ({
   content,
   contentComponent,
   description,
-  image,
+  featuredImage,
   tags,
   title,
   helmet,
@@ -27,9 +27,9 @@ export const BlogPostTemplate = ({
             className="full-width-image-container margin-top-0"
             style={{
               backgroundImage: `url(${
-                !!image.childImageSharp
-                  ? image.childImageSharp.fluid.src
-                  : image
+                !!featuredImage.childImageSharp
+                  ? featuredImage.childImageSharp.fluid.src
+                  : featuredImage
               })`,
             }}
           >
@@ -68,7 +68,7 @@ export const BlogPostTemplate = ({
 }
 
 BlogPostTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  featuredImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
@@ -96,7 +96,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
-        image={post.frontmatter.image}
+        featuredImage={post.frontmatter.featuredImage}
       />
     </Layout>
   )
@@ -117,7 +117,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        image {
+        featuredImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
               ...GatsbyImageSharpFluid
