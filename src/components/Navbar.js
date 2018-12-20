@@ -61,11 +61,12 @@ const Navbar = class extends React.Component {
         "background-color": "red",
       }}>Stockist</Link>
       <a
-      className="navbar-item"
-              href="https://shop.fourtwofouronfairfax.com"
+        className="navbar-item"
+        href="https://shop.fourtwofouronfairfax.com"
               target="_blank"
               rel="noopener noreferrer"
-          >Shop</a>
+          >Shop
+          </a>
       <div className="navbar-end">
       <a
   className="navbar-item"
@@ -93,15 +94,13 @@ const Navbar = class extends React.Component {
                   >tb</a>
       </div>
     </Menu>
-
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="fourtwofour" style={{ width: '65px' }} />
-        </Link>
-       
+    <div className="navbar-brand">
+    <Link to="/" className="navbar-logo" title="Logo">
+    <img src={logo} alt="fourtwofour" />
+  </Link>
+    </div>
       </div>
-    
-      </div>
+      
   </nav>
   )}
 }
