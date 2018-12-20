@@ -27,19 +27,15 @@ export default class IndexPage extends React.Component {
                   key={post.id}
                 >
                   <p>
-                    <Link style={{ "background-color": 'red'}} className="has-text-primary" to={post.fields.slug}>
-                         {post.frontmatter.title}
-                    </Link>
+                  
+                    <Link className="has-text-primary" to={post.fields.slug}>
+                    <h6>{post.frontmatter.date}</h6>
+                         <h3 style={{ "background-color": 'red', "margin-top":'0'}}>{post.frontmatter.title}</h3>
                    <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} /> 
-                    <small>{post.frontmatter.date}</small>
+                    </Link>
                   </p>
                   <p>
                     {post.excerpt}
-                    <br />
-                    <br />
-                    <Link className="button is-small" to={post.fields.slug}>
-                      Keep Reading →
-                    </Link>
                   </p>
                 </div>
               ))}
@@ -77,7 +73,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "DD MMMM, YYYY")
+            date(formatString: "MM/DD/YY")
             title
             featuredImage {
               childImageSharp{
@@ -92,35 +88,3 @@ export const pageQuery = graphql`
     }
   }
 `
-// original //
-
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     allMarkdownRemark(
-//       sort: { order: DESC, fields: [frontmatter___date] },
-//       filter: { frontmatter: { templateKey: { eq: "blog-post" } }}
-//     ) {
-//       edges {
-//         node {
-//           excerpt(pruneLength: 400)
-//           id
-//           fields {
-//             slug
-//           }
-//           frontmatter {
-//             title
-//             templateKey
-//             date(formatString: "MM/DD/YYYY")
-//             featuredImage {
-//               childImageSharp {
-//                   sizes(maxWidth: 630) {
-//                       ...GatsbyImageSharpSizes
-//                   }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
