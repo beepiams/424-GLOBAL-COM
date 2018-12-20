@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 // import github from '../img/github-icon.svg'
 import logo from '../img/424_logo.svg'
 
-import { slide as Menu } from 'react-burger-menu'
+import { stack as Menu } from 'react-burger-menu'
 
 const Navbar = class extends React.Component {
 
@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
 
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
     <div className="container">
-    <Menu left>
+    <Menu left width={ 200 } noOverlay styles={ styles }>
      <Link className="navbar-item" to="/" 
       activeStyle={{ color: "black", "background-color": "red" }}   
     >News</Link>  
@@ -95,7 +95,7 @@ const Navbar = class extends React.Component {
       </div>
     </Menu>
     <div className="navbar-brand">
-    <Link to="/" className="navbar-logo" title="Logo">
+    <Link to="/" className="navbarlogo" title="Logo">
     <img src={logo} alt="fourtwofour" />
   </Link>
     </div>
@@ -106,3 +106,42 @@ const Navbar = class extends React.Component {
 }
 
 export default Navbar
+
+var styles = {
+  bmBurgerButton: {
+    position: 'fixed',
+    width: '36px',
+    height: '30px',
+    left: '36px',
+    top: '36px'
+  },
+  bmBurgerBars: {
+    background: '#373a47'
+  },
+  bmCrossButton: {
+    height: '24px',
+    width: '24px'
+  },
+  bmCross: {
+    background: '#bdc3c7'
+  },
+  bmMenu: {
+    background: '#373a47',
+    padding: '2.5em 1.5em 0',
+    fontSize: '1.15em'
+  },
+  bmMorphShape: {
+    fill: '#373a47'
+  },
+  bmItemList: {
+    color: '#b8b7ad',
+    padding: '0.8em'
+  },
+  bmItem: {
+    display: 'inline-block'
+  },
+  bmOverlay: {
+    background: 'rgba(0, 0, 0, 0.3)'
+  },
+}
+
