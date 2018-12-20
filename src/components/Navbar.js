@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
 
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
     <div className="container">
-    <Menu left width={ 200 } noOverlay styles={ styles }>
+    <Menu left width={ 200 } styles={ styles }>
      <Link className="navbar-item" to="/" 
       activeStyle={{ color: "black", "background-color": "red" }}   
     >News</Link>  
@@ -110,10 +110,10 @@ export default Navbar
 var styles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '36px',
-    height: '30px',
-    left: '36px',
-    top: '36px'
+    width: '60px',
+    height: '22px',
+    left: '30px',
+    top: '40px'
   },
   bmBurgerBars: {
     background: '#373a47'
@@ -123,18 +123,18 @@ var styles = {
     width: '24px'
   },
   bmCross: {
-    background: '#bdc3c7'
+    background: '#373a47'
   },
   bmMenu: {
-    background: '#373a47',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
+    background: 'rgba(255, 255, 255, 0.9)',
+    padding: '4em 5em 0',
+    fontSize: '10px'
   },
   bmMorphShape: {
     fill: '#373a47'
   },
   bmItemList: {
-    color: '#b8b7ad',
+    color: '#e30001',
     padding: '0.8em'
   },
   bmItem: {
