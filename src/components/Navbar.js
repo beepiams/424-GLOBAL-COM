@@ -127,15 +127,17 @@ var styles = {
     background: '#373a47'
   },
   bmCrossButton: {
-    height: '24px',
-    width: '24px'
+    height: '20px',
+    width: '20px'
   },
+
   bmCross: {
-    background: '#373a47'
+    background: 'black',
   },
+
   bmMenu: {
     background: 'rgba(255, 255, 255, 0.9)',
-     padding: '3em 0em 0',
+     padding: '3.5em 0em 0',
     fontSize: '11px'
   },
   bmMorphShape: {
