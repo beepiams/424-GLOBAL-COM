@@ -42,31 +42,39 @@ const Navbar = class extends React.Component {
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
     <div className="container">
     <Menu left width={ 200 } styles={ styles }>
-     <Link className="navbar-item" to="/" 
-      activeStyle={{ color: "black", "background-color": "red" }}   
-    >News</Link>  
-    <Link className="navbar-item" to="/about" 
+    
+    <ul>
+    <li><Link className="navbar-item" to="/" 
+    activeStyle={{ color: "black", "background-color": "red" }}   
+  >News</Link>  </li>
+    <li><Link className="navbar-item" to="/about" 
     activeStyle={{
       color: "black",
       "background-color": "red",
-    }}>About</Link>
-      <Link className="navbar-item" to="/products" 
-      activeStyle={{
-        color: "black",
-        "background-color": "red",
-      }}>Lookbook</Link>
-      <Link className="navbar-item" to="/contact" 
-      activeStyle={{
-        color: "black",
-        "background-color": "red",
-      }}>Stockist</Link>
-      <a
-        className="navbar-item"
-        href="https://shop.fourtwofouronfairfax.com"
-              target="_blank"
-              rel="noopener noreferrer"
-          >Shop
-          </a>
+    }}>About</Link></li>
+    <li><Link className="navbar-item" to="/products" 
+    activeStyle={{
+      color: "black",
+      "background-color": "red",
+    }}>Lookbook</Link></li>
+    <li><Link className="navbar-item" to="/contact" 
+    activeStyle={{
+      color: "black",
+      "background-color": "red",
+    }}>Stockist</Link></li>
+    <li>  <a
+    className="navbar-item"
+    href="https://shop.fourtwofouronfairfax.com"
+          target="_blank"
+          rel="noopener noreferrer"
+      >Shop
+      </a></li>
+    </ul>
+    
+    
+      
+      
+    
       <div className="navbar-end">
       <a
   className="navbar-item"
@@ -110,7 +118,7 @@ export default Navbar
 var styles = {
   bmBurgerButton: {
     position: 'fixed',
-    width: '56px',
+    width: '44px',
     height: '22px',
     left: '26px',
     top: '40px'
@@ -127,19 +135,20 @@ var styles = {
   },
   bmMenu: {
     background: 'rgba(255, 255, 255, 0.9)',
-    padding: '4em 5em 0',
-    fontSize: '10px'
+     padding: '3em 0em 0',
+    fontSize: '11px'
   },
   bmMorphShape: {
     fill: '#373a47'
   },
   bmItemList: {
     color: '#e30001',
-    padding: '0.8em'
+    // padding: '0.8em'
   },
+
   bmItem: {
-    display: 'inline-block'
   },
+  
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'
   },
