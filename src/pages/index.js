@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import { Link, graphql } from 'gatsby'
 
+
 import Layout from '../components/Layout'
+
 
 export default class IndexPage extends React.Component {
   render() {
@@ -12,6 +14,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
+     
         <section className="section">
           <div className="container">
             <div className="content">
@@ -41,7 +44,9 @@ export default class IndexPage extends React.Component {
               ))}
           </div>
         </section>
+       
       </Layout>
+
     )
   }
 }

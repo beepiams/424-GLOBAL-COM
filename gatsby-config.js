@@ -6,6 +6,7 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    'gatsby-plugin-page-transitions',
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
@@ -58,12 +59,13 @@ module.exports = {
         }
       }
     },
-    // {
-    //   resolve: `gatsby-plugin-typography`,
-    //   options: {
-    //       pathToConfigModule: `src/utils/typography`,
-    //     }
-    // },
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+          pathToConfigModule: `src/utils/typography`,
+          omitGoogleFont: true,
+        }
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

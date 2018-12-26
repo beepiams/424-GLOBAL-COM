@@ -1,16 +1,18 @@
 import Typography from "typography"
+
 const typography = new Typography({
-  baseFontSize: "16px",
+  baseFontSize: "18px",
   baseLineHeight: 1.666,
   headerFontFamily: [
-  "SuisseIntl-Bold.otf",
+    "SuisseIntl-Bold",
+    "Avenir Next",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
     "Arial",
     "sans-serif",
   ],
-  bodyFontFamily: ["../static/fonts/SuisseIntl-Regular.otf", "sans-serif"],
+  bodyFontFamily: ["Helvetica Neue", "serif"],
 })
 
 export default typography

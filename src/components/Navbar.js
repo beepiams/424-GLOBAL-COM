@@ -39,77 +39,86 @@ const Navbar = class extends React.Component {
    return (
   
 
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="container">
-    <Menu left width={ 200 } styles={ styles }>
     
+    <div id="outer-container">
+    
+    
+    <main id="page-wrap">
+
+    <Menu left width={ 200 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
     <ul>
-    <li><Link className="navbar-item" to="/" 
+    <li>
+    <Link className="navbar-item" to="/" 
     activeStyle={{ color: "black", "background-color": "red" }}   
-  >News</Link>  </li>
-    <li><Link className="navbar-item" to="/about" 
+  >News</Link>  
+  </li>
+    <li>
+    <Link className="navbar-item" to="/about" 
     activeStyle={{
       color: "black",
       "background-color": "red",
-    }}>About</Link></li>
-    <li><Link className="navbar-item" to="/products" 
+    }}>About</Link>
+    </li>
+    <li>
+    <Link className="navbar-item" to="/products" 
     activeStyle={{
       color: "black",
       "background-color": "red",
-    }}>Lookbook</Link></li>
-    <li><Link className="navbar-item" to="/contact" 
+    }}>Lookbook</Link>
+    </li>
+    <li>
+    <Link className="navbar-item" to="/contact" 
     activeStyle={{
       color: "black",
       "background-color": "red",
-    }}>Stockist</Link></li>
-    <li>  <a
+    }}>Stockist</Link>
+    </li>
+    <li>
+    <a
     className="navbar-item"
     href="https://shop.fourtwofouronfairfax.com"
           target="_blank"
           rel="noopener noreferrer"
       >Shop
-      </a></li>
+      </a>
+      </li>
     </ul>
     
-    
-      
-      
-    
-      <div className="navbar-end">
-      <a
-  className="navbar-item"
-          href="https://twitter.com/424onFAIRFAX"
-          target="_blank"
-          rel="noopener noreferrer"
-      >tw</a>
-      <a
-      className="navbar-item"
-              href="https://www.facebook.com/424onFairfax"
-              target="_blank"
-              rel="noopener noreferrer"
-          >fb</a>
-          <a
-          className="navbar-item"
-                  href="https://www.instagram.com/fourtwofouronfairfax/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >ig</a>
-              <a
-              className="navbar-item"
-                      href="http://424onfairfax.tumblr.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                  >tb</a>
-      </div>
+    <div className="navbar-end">
+    <a
+className="navbar-item"
+        href="https://twitter.com/424onFAIRFAX"
+        target="_blank"
+        rel="noopener noreferrer"
+    >tw</a>
+    <a
+    className="navbar-item"
+            href="https://www.facebook.com/424onFairfax"
+            target="_blank"
+            rel="noopener noreferrer"
+        >fb</a>
+        <a
+        className="navbar-item"
+                href="https://www.instagram.com/fourtwofouronfairfax/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >ig</a>
+            <a
+            className="navbar-item"
+                    href="http://424onfairfax.tumblr.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >tb</a>
+    </div>
     </Menu>
-    <div className="navbar-brand">
+    </main>
+        <div className="navbar-brand">
     <Link to="/" className="navbarlogo" title="Logo">
     <img src={logo} alt="fourtwofour" />
   </Link>
     </div>
-      </div>
-      
-  </nav>
+  </div>
+
   )}
 }
 
@@ -134,6 +143,8 @@ var styles = {
   bmCross: {
     background: 'black',
   },
+
+  
 
   bmMenu: {
     background: 'rgba(255, 255, 255, 0.9)',

@@ -10,6 +10,7 @@
     "gatsby-image": "^2.0.25",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^3.0.9",
+    "gatsby-plugin-page-transitions": "^1.0.7",
     "gatsby-plugin-purgecss": "^2.4.0",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sass": "^2.0.7",
@@ -35,6 +36,7 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "styled-components": "^4.1.3",
+    "typeface": "^0.0.0",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18",
     "uuid": "^3.2.1"
