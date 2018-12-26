@@ -5,7 +5,6 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import PageTransition from 'gatsby-plugin-page-transitions';
 
 
 export const BlogPostTemplate = ({
@@ -20,7 +19,6 @@ export const BlogPostTemplate = ({
   const PostContent = contentComponent || Content
 
   return (
-    <PageTransition>
     <section className="section">
       {helmet || ''}
       <div className="container content">
@@ -67,7 +65,6 @@ export const BlogPostTemplate = ({
         </div>
       </div>
     </section>
-    </PageTransition>
   )
 }
 
