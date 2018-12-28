@@ -25,7 +25,7 @@ export default class IndexPage extends React.Component {
               boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
               backgroundColor: '#e30001',
               color: 'black',
-              padding: '1rem',
+              padding: '.5rem',
               textAlign: 'center'
             }}>
               424 NEWS
@@ -35,7 +35,7 @@ export default class IndexPage extends React.Component {
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  // style={{ padding: '0.25em 3em' }}
+                  style={{ padding: '0.25em 3em' }}
                   key={post.id}
                 >
                     <Link className="has-text-primary" to={post.fields.slug}>
@@ -43,7 +43,7 @@ export default class IndexPage extends React.Component {
                          <h3 style={{  boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
                          backgroundColor: '#e30001',
                          color: 'black',
-                         margin: '.5rem',
+                         padding: '.5rem',
                          textAlign: 'center'}}>{post.frontmatter.title}</h3>
 
                    <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes}

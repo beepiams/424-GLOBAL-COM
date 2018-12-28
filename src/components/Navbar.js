@@ -105,11 +105,13 @@ className="navbar-item"
                     rel="noopener noreferrer"
                 >tb</a>
     </div>
+    
     </Menu>
+    
     </main>
-        <div className="navbar-brand">
-    <Link to="/" className="navbarlogo" title="Logo">
-    <img src={logo} alt="fourtwofour" />
+    <div className="navbar-brand">
+    <Link to="/" className="navbarlogo"  title="Logo" >
+    <img style={{zIndex:'0'}}  src={logo}  alt="fourtwofour" />
   </Link>
     </div>
   </div>
@@ -123,7 +125,7 @@ var styles = {
   bmBurgerButton: {
     position: 'fixed',
     width: '44px',
-    height: '22px',
+    height: '18px',
     left: '26px',
     top: '40px'
   },
