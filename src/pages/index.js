@@ -7,6 +7,8 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 
+
+
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
@@ -16,27 +18,41 @@ export default class IndexPage extends React.Component {
       <Layout>
      
         <section className="section">
-          <div className="container">
-            <div className="content">
-              <h1 className="has-text-weight-bold is-size-3">
-                <span style={{ "background-color": `red` }}>424 NEWS</span>
-              </h1>
+          <div className="container ">
+            <div className="content column is-10 is-offset-1">
+            <h2 className="title is-size-2 has-text-weight-bold is-bold-light"
+            style={{
+              boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+              backgroundColor: '#e30001',
+              color: 'black',
+              padding: '1rem',
+              textAlign: 'center'
+            }}>
+              424 NEWS
+            </h2>
             </div>
             {posts
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ padding: '0.25em 3em' }}
+                  // style={{ padding: '0.25em 3em' }}
                   key={post.id}
                 >
-                  <p>
-                  
                     <Link className="has-text-primary" to={post.fields.slug}>
-                    <h6>{post.frontmatter.date}</h6>
-                         <h3 style={{ "background-color": 'red', "margin-top":'0'}}>{post.frontmatter.title}</h3>
-                   <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} /> 
+
+                         <h3 style={{  boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+                         backgroundColor: '#e30001',
+                         color: 'black',
+                         margin: '.5rem',
+                         textAlign: 'center'}}>{post.frontmatter.title}</h3>
+
+                   <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
+                    /> 
+                    <p style={{ 
+                      color: 'black',
+                      textAlign: 'right'}}>{post.frontmatter.date}</p>
                     </Link>
-                  </p>
+                 
                   <p>
                     {post.excerpt}
                   </p>

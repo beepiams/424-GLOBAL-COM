@@ -34,17 +34,16 @@ export const BlogPostTemplate = ({
               })`,
             }}
           >
-            <h2
-              className="has-text-weight-bold is-size-1"
-              style={{
-                boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
-                backgroundColor: '#e30001',
-                color: 'black',
-                padding: '1rem',
-              }}
-            >
-              {title}
-            </h2>
+          <h2 className="title is-size-2 has-text-weight-bold is-bold-light"
+          style={{
+            boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+            backgroundColor: '#e30001',
+            color: 'black',
+            padding: '1rem',
+            textAlign: 'center'
+          }}>
+            {title}
+          </h2>
           </div>
          
             <p>{description}</p>

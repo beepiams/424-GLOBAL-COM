@@ -37,6 +37,9 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section">
+
+
+        
           <div className="container">
             <div className="content">
         <h1>Stockist</h1>
@@ -48,6 +51,9 @@ export default class Index extends React.Component {
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
+
+        
+     
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <div hidden>
@@ -81,6 +87,7 @@ export default class Index extends React.Component {
         </div>
         </div>
         </section>
+        
       </Layout>
     );
   }

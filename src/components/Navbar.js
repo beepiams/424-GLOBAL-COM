@@ -38,40 +38,35 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-
-    
     <div id="outer-container">
-    
-    
     <main id="page-wrap">
-
     <Menu left width={ 200 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
     <ul>
     <li>
     <Link className="navbar-item" to="/" 
-    activeStyle={{ color: "black", "background-color": "red" }}   
-  >News</Link>  
+    activeStyle={{ color: "black", "background-color": '#e30001'}}   
+  ><p>News</p></Link>  
   </li>
     <li>
-    <Link className="navbar-item" to="/about" 
+    <Link className="navbar-item" to="/stockist" 
     activeStyle={{
       color: "black",
-      "background-color": "red",
-    }}>About</Link>
+      "background-color": '#e30001',
+    }}>Stockist</Link>
     </li>
     <li>
     <Link className="navbar-item" to="/products" 
     activeStyle={{
       color: "black",
-      "background-color": "red",
+      "background-color": '#e30001',
     }}>Lookbook</Link>
     </li>
     <li>
     <Link className="navbar-item" to="/contact" 
     activeStyle={{
       color: "black",
-      "background-color": "red",
-    }}>Stockist</Link>
+      "background-color": '#e30001',
+    }}>Contact</Link>
     </li>
     <li>
     <a
@@ -144,8 +139,6 @@ var styles = {
     background: 'black',
   },
 
-  
-
   bmMenu: {
     background: 'rgba(255, 255, 255, 0.9)',
      padding: '3.5em 0em 0',
@@ -169,5 +162,6 @@ var styles = {
   navbaritem: {
     background: 'rgba(0, 0, 0, 0.3)'
   },
+  
 }
 
