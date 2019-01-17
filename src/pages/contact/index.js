@@ -42,7 +42,13 @@ export default class Index extends React.Component {
         
           <div className="container">
             <div className="content">
-        <h1>Stockist</h1>
+        <h1 style={{
+          boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+          backgroundColor: '#e30001',
+          color: 'black',
+          padding: '1rem',
+          textAlign: 'center'
+        }}>Contact</h1>
         <form
           name="contact"
           method="post"
@@ -53,7 +59,21 @@ export default class Index extends React.Component {
         >
 
         
-     
+        <span>424 N FAIRFAX AVE. LOS ANGELES, CA 90036</span>
+        <br /><br />
+        <h6>phone: +1 323 424 4842</h6>
+        <h6>fax: +1 323 424 4292</h6> 
+        <span>order inquiries:</span>
+        <h6>customerservice@fourtwofouronfairfax.com</h6>   
+        
+        <span>HOURS OF OPERATION </span>
+        <h6>Closed on Monday, Tuesday–Friday 11am- 7pm, Saturday–Sunday 12pm–6pm</h6>
+        
+        <span>HOLIDAY HOURS 2018 (DEC 14–JAN 4)</span>
+        <h6>Tuesday–Thursday: 11am–8pm, Friday–Saturday 11am–9pm, Sunday 11am–7pm. Closed Dec 24–25 & Dec 31–Jan 2</h6>
+        
+        <span>All sales are final. No returns or exchanges, unless directly approved by FourTwoFour on Fairfax.</span>
+        <br /><br />
           {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
           <input type="hidden" name="form-name" value="contact" />
           <div hidden>

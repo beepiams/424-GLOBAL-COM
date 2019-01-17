@@ -40,18 +40,20 @@ const Navbar = class extends React.Component {
   
     <div id="outer-container">
     <main id="page-wrap">
-    <Menu left width={ 240 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+    <Menu left width={ 200 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+
     <ul>
     <li>
     <Link className="navbar-item" to="/" 
     activeStyle={{ color: "black", "background-color": '#e30001'}}   
-  ><p>News</p></Link>  
+  ><p>News</p></Link>
   </li>
     <li>
     <Link className="navbar-item" to="/stockist" 
     activeStyle={{
       color: "black",
       "background-color": '#e30001',
+
     }}>Stockist</Link>
     </li>
     <li>
@@ -81,7 +83,7 @@ const Navbar = class extends React.Component {
     
     <div className="navbar-end">
     <a
-className="navbar-item"
+    className="navbar-item"
         href="https://twitter.com/424onFAIRFAX"
         target="_blank"
         rel="noopener noreferrer"
@@ -92,30 +94,28 @@ className="navbar-item"
             target="_blank"
             rel="noopener noreferrer"
         >fb</a>
-        <a
-        className="navbar-item"
-                href="https://www.instagram.com/fourtwofouronfairfax/"
-                target="_blank"
-                rel="noopener noreferrer"
+    <a
+    className="navbar-item"
+            href="https://www.instagram.com/fourtwofouronfairfax/"
+            target="_blank"
+            rel="noopener noreferrer"
             >ig</a>
             <a
-            className="navbar-item"
-                    href="http://424onfairfax.tumblr.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+      className="navbar-item"
+            href="http://424onfairfax.tumblr.com"
+            target="_blank"
+            rel="noopener noreferrer"
                 >tb</a>
     </div>
-    
     </Menu>
-    
     </main>
+
     <div className="navbar-brand">
     <Link to="/" className="navbarlogo"  title="Logo" >
     <img style={{zIndex:'0'}}  src={logo}  alt="fourtwofour" />
   </Link>
     </div>
   </div>
-
   )}
 }
 
@@ -132,6 +132,9 @@ var styles = {
   bmBurgerBars: {
     background: '#373a47'
   },
+  // bmBurgerBarsHover: {
+  //   background: '#a90000'
+  // },
   bmCrossButton: {
     // height: '20px',
     width: '20px'
@@ -143,7 +146,7 @@ var styles = {
 
   bmMenu: {
     background: 'rgba(255, 255, 255, 0.9)',
-     padding: '3.5em 0em 0',
+     padding: '3em 0em 0',
     fontSize: '11px'
   },
   bmMorphShape: {
@@ -160,7 +163,6 @@ var styles = {
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'
   },
-
   
 }
 
