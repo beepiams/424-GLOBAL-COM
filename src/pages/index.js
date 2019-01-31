@@ -11,19 +11,17 @@ import Layout from '../components/Layout'
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props
-    const { edges: posts } = data.allMarkdownRemark
+    const { edges: posts } = data.allMarkdownRemark;
 
     return (
       <Layout>
-     
-        <section className="section">
-          <div className="container ">
-           
+        <section className="section column is-12 ">
+          <div className="container margin-top-0">
             {posts
               .map(({ node: post }) => (
                 <div
                   className="content"
-                  style={{ padding: '0.25em 2em' }}
+                  style={{ }}
                   key={post.id}
                 >
                     <Link className="has-text-primary" to={post.fields.slug}>
@@ -32,7 +30,7 @@ export default class IndexPage extends React.Component {
                          fontSize: '11px',
                          textAlign: 'right'}}>{post.frontmatter.title}<br />{post.frontmatter.date}</p>
                       <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-                      /> 
+                      />
                     </Link>
                   <p>
                     {post.excerpt}
@@ -41,7 +39,6 @@ export default class IndexPage extends React.Component {
               ))}
           </div>
         </section>
-       
       </Layout>
 
     )

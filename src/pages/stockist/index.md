@@ -4,9 +4,10 @@ path: /stockist
 title: 424 Stockist
 ---
 
----
+
+***
 #### USA
----
+
 
 [barneys.com](https://www.barneys.com/search?q=424)
  ###### Barneys New York, NY
@@ -17,31 +18,31 @@ title: 424 Stockist
  ###### Barneys Chicago
  ###### Barneys Seattle
 
----
+
 [hirshleifers.com](https://www.hirshleifers.com)
  ###### Hirshleifers Manhasset, NY
----
+
 [kithnyc.com](https://kith.com/pages/search-results-page?q=424)
  ###### KITH New York, NY
  ###### KITH Brooklyn, NY
  ###### KITH Miami, FL
----
+
 [patronofthenew.us](https://patronofthenew.us/designer/413656338) 
 ###### Patron Of The New New York, NY
----
+
 [rsvpgallery.com](https://www.rsvpgallery.com)
 ###### RSVP Gallery Chicago, IL
----
+
 [riccardiboston.com](https://www.riccardiboston.com/collections/424)
 ###### Riccardi Boston, MA
----
+
 [wildstylela.com](http://www.wildstylela.com/424/)
 ###### WildStyle Los Angeles, CA
 
  
 ***
 #### CANADA
-***
+
  
 ###### The Common Ottawa, ON
 [commonshop.com](https://www.commonshop.com/search?q=424)
@@ -52,9 +53,9 @@ title: 424 Stockist
 ###### SSENSE Montreal/Web
 [ssense.com](https://www.ssense.com/en-us/men/designers/424)
  
-*** 
-#### UK
 ***
+#### UK
+
  
 ###### Harvey Nichols London, UK
 [harveynichols.com](https://www.harveynichols.com/int/brand/fourtwofour-on-fairfax/)
@@ -76,7 +77,7 @@ title: 424 Stockist
  
 ***
 #### ITALY
-***
+
  
 ###### Antonioli, Italy
 [antonioli.eu](https://www.antonioli.eu/en/US/search?utf8=✓&q=424&gender=men)
@@ -98,7 +99,7 @@ title: 424 Stockist
 
 ***
 #### BELGIUM & THE NETHERLANDS
-***
+
   
 ###### Labels, The Netherlands
 [labelsfashion.com](https://shop.labelsfashion.com/men/designers/424-fairfax)
@@ -114,17 +115,16 @@ title: 424 Stockist
  
 ***
 #### FRANCE
-***
+
   
 ###### Jogging Marseille, France
 [joggingjogging.com](https://www.joggingjogging.com/recherche?controller=search&orderby=position&orderway=desc&search_query=424&submit_search=)
  
 ###### Summer Store Lyon, France
-[summer-store.com](http://summer-store.com)
- 
+[summer-store.com](http://summer-store.com)  
 ***
 #### GERMANY
-***
+
  
 ###### The Listener Frankfurt, Germany
 [thelistener.de](http://thelistener.de)
@@ -134,28 +134,27 @@ title: 424 Stockist
  
 ***      
 #### NORTHERN EUROPE
-***
 
 ###### Storm Copenhagen, Denmark
 [stormfashion.dk](https://stormfashion.dk/search?q=424)
  
 ***
 #### SPAIN
-***
+
  
 ###### Werhaus Barcelona, Spain
 [wer-haus.com](https://wer-haus.com/product-tag/424/)
  
 *** 
 #### RUSSIA
-***
+
  
 ###### Kuznetsky Most 20 Moscow, Russia
 [km20.ru](https://usa.km20.ru/catalog/brand/79423/men/)
  
 ***
 #### JAPAN
-***
+
  
 ###### Cherry Fukuoka, Japan
 [cherry-fukuoka.com](http://cherry-fukuoka.com/?mode=srh&sort=n&keyword=424)
@@ -171,7 +170,7 @@ title: 424 Stockist
  
 ***
 #### CHINA, HONG KONG AND TAIWAN
-***
+
  
 ###### I.T Hong Kong
 ###### I.T Shanghai, China
@@ -189,7 +188,7 @@ title: 424 Stockist
  
 *** 
 #### KOREA
-***
+
  
 ###### Boon The Shop Seoul, Korea
 [boontheshop.com](http://boontheshop.com)
@@ -199,21 +198,21 @@ title: 424 Stockist
  
 ***
 #### SOUTHEAST ASIA
-***
+
  
 ###### Surrender Singapore
 [surrenderous.com](http://surrenderous.com)
  
 ***
 #### AUSTRALIA
-***
+
  
 ###### Cabinet Noir Perth, AU
 [cabinetnoir.com.au](https://www.cabinetnoir.com.au/designers/designers-424.html)
              
 ***
 #### MIDDLE EAST
-***
+
  
 ###### Le Gray Riyadh, Saudi Arabia
 [legray.net](http://legray.net)

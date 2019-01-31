@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 424 X Hummel
 featuredImage: /img/002-424xHummel/001Y_A.jpg
 date: 2018-12-11
-description: Brewing with a Chemex probably seems like a complicated, time-consuming ordeal, but once you get used to the process, it becomes a soothing ritual that's worth the effort every time.
+description: Some Description
 tags:
   - brewing
   - chemex

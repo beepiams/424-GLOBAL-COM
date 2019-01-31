@@ -13,18 +13,17 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-2 has-text-weight-bold is-bold-light"
-              style={{
-                boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
-                backgroundColor: '#e30001',
-                color: 'black',
-                padding: '1rem',
-                textAlign: 'center'
-              }}>
-                {title}
-              </h2>
+          
+            <div className="section" >
+
+            <p style={{ 
+              color: 'black',
+              fontSize: '11px',
+              textAlign: 'right'}}>
+              {title}
+              </p>
              <p style={{textAlign: 'center'}}>
+            
              <PageContent className="content" content={content} />
              </p> 
             </div>

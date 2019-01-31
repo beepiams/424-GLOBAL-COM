@@ -1,5 +1,10 @@
 @import "~bulma/sass/utilities/initial-variables"
 
+body a
+  &:link, &:visited, &:hover, &:active
+    color: #000
+
+  
 // Config vars
 // 424 logo brand color: #e30001
 $fourtwofour-red: #000
@@ -10,6 +15,7 @@ $primary-invert: $fourtwofour-red-invert
 $body-color: #333
 
 
+  
 .navbar .navbar-menu
   box-shadow:none !important
 
@@ -29,6 +35,7 @@ $body-color: #333
     margin-top: 0
 
 // Helper Classes
+// Title middle
 .full-width-image-container
   width: 100vw
   height: 400px
@@ -41,6 +48,8 @@ $body-color: #333
   display: flex
   justify-content: center
   align-items: center
+
+
 
 .margin-top-0
   margin-top: 0 !important
