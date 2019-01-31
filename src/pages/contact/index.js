@@ -37,22 +37,13 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section">
-
-
-        
-          <div className="container">
-            <div className="content">
-        <h1 style={{
-          boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
-          backgroundColor: '#e30001',
-          color: 'black',
-          padding: '1rem',
-          textAlign: 'center'
-        }}>info@424groupinc.com</h1>
-        <h6 align="center">424 N FAIRFAX AVE. LOS ANGELES, CA 90036</h6>
-     <br /><br />
-    
-     
+            <div className="container">
+            <div className="content">    
+          <p style={{ 
+            color: 'black',
+            fontSize: '11px',
+            textAlign: 'right'}}>
+        info@424groupinc.com</p>
         </div>
         </div>
         </section>

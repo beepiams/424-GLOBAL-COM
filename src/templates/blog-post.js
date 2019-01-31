@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
@@ -12,55 +11,37 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   featuredImage,
-  tags,
+
   title,
   helmet,
 }) => {
   const PostContent = contentComponent || Content
 
   return (
-    <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div
-            className="full-width-image-container margin-top-0"
-            style={{
-              backgroundImage: `url(${
-                !!featuredImage.childImageSharp
-                  ? featuredImage.childImageSharp.fluid.src
-                  : featuredImage
-              })`,
-            }}
-          >
-          <h2 className="title is-size-2 has-text-weight-bold is-bold-light"
-          style={{
-            boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
-            backgroundColor: '#e30001',
+
+          <section className="section section--gradient ">
+          {helmet || ''}
+          <div className="container">
+            <div className="section">
+              <div className="columns">
+                <div className="column is-12">
+                  <div className="content">
+      
+        
+          <p style={{ 
             color: 'black',
-            padding: '1rem',
-            textAlign: 'center'
-          }}>
+            fontSize: '11px',
+            textAlign: 'right'}}>
             {title}
-          </h2>
-          </div>
+          </p>
          
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
+           <PostContent content={content} />
+        
           </div>
+
+           
+       </div>
+       </div>
         </div>
       </div>
     </section>

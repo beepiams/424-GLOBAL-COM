@@ -12,7 +12,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-12">
           
             <div className="section" >
 

@@ -1,7 +1,7 @@
 ---
 templateKey: 'product-page'
 path: /products
-title: LOOKBOOK
+title: Lookbook
 featuredImage: /img/002-FW18-Lookbook/Shot-10-_014.jpg
 heading: 
 description: 

@@ -147,7 +147,7 @@ var styles = {
     fontSize: '11px'
   },
   bmMorphShape: {
-    fill: '#373a47'
+    fill: '#e30001'
   },
   bmItemList: {
     color: '#e30001',
@@ -155,6 +155,7 @@ var styles = {
   },
 
   bmItem: {
+    color: '#e30001',
   },
   
   bmOverlay: {
