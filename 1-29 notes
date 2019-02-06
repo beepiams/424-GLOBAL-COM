@@ -1,0 +1,79 @@
+MEDIA QUERY CHECK
+
+News Landing Page
+Is it possible on mobile to get images 100% width? (site wide?) 
+
+removed padding: '0.25em 2em' from index.js content class div
+ No margin at all? 
+[ ] frontmatter.fullImage solution
+
+Sub Page i.e. 424 x Hummel etc
+[ ] Add line break between images.
+[X] Remove header image.
+[X] Change Header text to 11px line height 1.5em (same as tite/date on news page).
+[X] Remove Tags at bottom.
+
+Stockist Page
+[X]Remove 424 Stockist header.
+[X]Remove horizontal rules around country.
+[X]Make text 11px line height 1.5em (same as tite/date on news page).
+[X]Make link text black.
+
+Lookbook Page
+[X] Remove header image.
+[X] Keep Images vertically stacked.
+[X] No rounded corner images.
+
+Contact
+[X] Remove form and text.
+[X] Probably just have an email: info@424groupinc.com
+
+
+ <h2
+                  className="has-text-weight-bold is-size-1"
+                  style={{
+                    boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+                    backgroundColor: '#e30001',
+                    color: 'black',
+                    padding: '1rem',
+                  }}
+                >
+                  {title}
+                </h2>
+
+
+
+
+
+            <div
+            className="full-width-image-container margin-top-0"
+            style={{
+              backgroundImage: `url(${
+                !!featuredImage.childImageSharp
+                  ? featuredImage.childImageSharp.fluid.src
+                  : featuredImage
+              })`,
+            }}
+          >
+<h2 className="title has-text-weight-bold is-bold-light"
+
+
+ <h2 className="title is-size-2 has-text-weight-bold is-bold-light"
+              style={{
+                boxShadow: '0.5rem 0 0 #e30001, -0.5rem 0 0 #e30001',
+                backgroundColor: '#e30001',
+                color: 'black',
+                padding: '1rem',
+                textAlign: 'center'
+              }}>
+                {title}
+              </h2>
+
+
+
+<section className="section section--gradient">
+    <div className="container">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <div className="content">

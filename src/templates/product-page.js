@@ -11,16 +11,13 @@ export const ProductPageTemplate = ({
   heading,
   description,
   intro,
-
-
-
 }) => (
   <section className="section section--gradient ">
     <div className="container">
       <div className="section">
         <div className="columns">
           <div className="column is-12">
-            <div className="content">
+            <div className="">
                 <p
                   className=""
                   style={{ 
@@ -69,8 +66,6 @@ const ProductPage = ({ data }) => {
         heading={frontmatter.heading}
         description={frontmatter.description}
         intro={frontmatter.intro}
-       
-
       />
     </Layout>
   )

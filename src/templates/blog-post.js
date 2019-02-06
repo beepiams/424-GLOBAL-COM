@@ -11,7 +11,6 @@ export const BlogPostTemplate = ({
   contentComponent,
   description,
   featuredImage,
-
   title,
   helmet,
 }) => {
@@ -19,32 +18,28 @@ export const BlogPostTemplate = ({
 
   return (
 
-          <section className="section section--gradient ">
-          {helmet || ''}
-          <div className="container">
-            <div className="section">
-              <div className="columns">
-                <div className="column is-12">
-                  <div className="content">
-      
-        
-          <p style={{ 
-            color: 'black',
-            fontSize: '11px',
-            textAlign: 'right'}}>
-            {title}
-          </p>
-         
-           <PostContent content={content} />
-        
-          </div>
-
+  <section className="section section--gradient ">
+  {helmet || ''}
+    <div className="container margin-top-0">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-12">
+            <div className="content">
+              <p style={{ 
+                color: 'black',
+                fontSize: '11px',
+                textAlign: 'right'}}>
+                {title}
+              </p>
+            
+              <PostContent content={content} />
            
-       </div>
-       </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   )
 }
 
@@ -65,7 +60,6 @@ const BlogPost = ({ data }) => {
       <BlogPostTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        
         description={post.frontmatter.description}
         helmet={
           <Helmet

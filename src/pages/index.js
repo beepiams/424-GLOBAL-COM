@@ -15,7 +15,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section column is-12 ">
+        <section className="section column is-12">
           <div className="container margin-top-0">
             {posts
               .map(({ node: post }) => (
