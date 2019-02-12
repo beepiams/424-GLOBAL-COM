@@ -15,8 +15,11 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <section className="section column is-12">
-          <div className="container margin-top-0">
+      <div className="container margin-top-0">
+      <div className="section">
+        <div className="columns">
+          <div className="column is-full">
+            <div className="content">
             {posts
               .map(({ node: post }) => (
                 <div
@@ -29,17 +32,19 @@ export default class IndexPage extends React.Component {
                          color: 'black',
                          fontSize: '11px',
                          textAlign: 'right'}}>{post.frontmatter.title}<br />{post.frontmatter.date}</p>
-                      <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes}
-                      />
-                    </Link>
+                         <Img sizes={post.frontmatter.featuredImage.childImageSharp.sizes} />
+                  
+                         </Link>
                   <p>
                     {post.excerpt}
                   </p>
                 </div>
               ))}
           </div>
-        </section>
-      </Layout>
+          </div>
+          </div>
+          </div></div>
+        </Layout>
 
     )
   }
@@ -76,7 +81,7 @@ export const pageQuery = graphql`
             title
             featuredImage {
               childImageSharp{
-                  sizes(maxWidth: 630) {
+                  sizes(maxWidth: 1200, maxHeight: 1200) {
                       ...GatsbyImageSharpSizes
                   }
               }
