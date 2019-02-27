@@ -9,7 +9,6 @@ import { push as Menu } from 'react-burger-menu'
 
 import './all.sass'
 
-
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -159,4 +158,5 @@ var styles = {
 
   
 }
+
 

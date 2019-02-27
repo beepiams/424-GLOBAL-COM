@@ -22,8 +22,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
               textAlign: 'right'}}>
               {title}
               </p>
-             <p style={{textAlign: 'center'}}>
-            
+             <p style={{textAlign: 'center', fontSize: '.75em' }}>
              <PageContent className="content" content={content} />
              </p> 
             </div>

@@ -40,33 +40,19 @@ const Navbar = class extends React.Component {
   
     <div id="outer-container">
     <main id="page-wrap">
-    <Menu left width={ 240 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
+    <Menu left width={ 240 } style={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
     <ul>
     <li>
-    <Link className="navbar-item" to="/" 
-    activeStyle={{ color: "black", "background-color": '#e30001'}}   
-  ><p>News</p></Link>  
-  </li>
+    <Link className="navbar-item" to="/">News</Link>
+   </li>
     <li>
-    <Link className="navbar-item" to="/stockist" 
-    activeStyle={{
-      color: "black",
-      "background-color": '#e30001',
-    }}>Stockist</Link>
+    <Link className="navbar-item" to="/stockist">Stockist</Link>
     </li>
     <li>
-    <Link className="navbar-item" to="/products" 
-    activeStyle={{
-      color: "black",
-      "background-color": '#e30001',
-    }}>Lookbook</Link>
+    <Link className="navbar-item" to="/products">Lookbook</Link>
     </li>
     <li>
-    <Link className="navbar-item" to="/contact" 
-    activeStyle={{
-      color: "black",
-      "background-color": '#e30001',
-    }}>Contact</Link>
+    <Link className="navbar-item" to="/contact">Contact</Link>
     </li>
     <li>
     <a
@@ -120,48 +106,7 @@ className="navbar-item"
 }
 
 export default Navbar
-
 var styles = {
-  bmBurgerButton: {
-    position: 'fixed',
-    width: '36px',
-    height: '18px',
-    left: '16px',
-    top: '20px'
-  },
-  bmBurgerBars: {
-    background: '#373a47'
-  },
-  bmCrossButton: {
-    // height: '20px',
-    width: '20px'
-  },
 
-  bmCross: {
-    background: 'black',
-  },
-
-  bmMenu: {
-    background: 'rgba(255, 255, 255, 0.9)',
-     padding: '3.5em 0em 0',
-    fontSize: '11px'
-  },
-  bmMorphShape: {
-    fill: '#e30001'
-  },
-  bmItemList: {
-    color: '#e30001',
-    // padding: '0.8em'
-  },
-
-  bmItem: {
-    color: '#e30001',
-  },
-  
-  bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
-  },
-
-  
 }
 
