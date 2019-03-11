@@ -47,18 +47,14 @@ const TemplateWrapper = ({ children }) => (
         <div id="outer-container">
         <Menu left width={ 240 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
         <Link className="navbar-item" to="/" 
-    activeStyle={{ color: "black", "background-color": '#e30001'}}   
-  ><p>News</p></Link>  
+    activeStyle={{color: "black",
+    "background-color": '#e30001', }}   
+  >News</Link>  
   <Link className="navbar-item" to="/stockist" 
-  activeStyle={{
-    color: "black",
-    "background-color": '#e30001',
-  }}>Stockist</Link>
+  activeStyle={{color: "black",
+  "background-color": '#e30001', }}>Stockist</Link>
   <Link className="navbar-item" to="/products" 
-  activeStyle={{
-    color: "black",
-    "background-color": '#e30001',
-  }}>Lookbook</Link>
+  activeClassName={{  }}>Lookbook</Link>
   <Link className="navbar-item" to="/contact" 
     activeStyle={{
       color: "black",
@@ -73,30 +69,25 @@ const TemplateWrapper = ({ children }) => (
       </a>
 
       <div className="navbar-end">
-      <a
-  className="navbar-item"
+      <a  className="navbar-item"
           href="https://twitter.com/424onFAIRFAX"
           target="_blank"
-          rel="noopener noreferrer"
-      >tw</a>
+          rel="noopener noreferrer">tw</a>
+
+      <a  className="navbar-item"
+          href="https://www.facebook.com/424onFairfax"
+          target="_blank"
+          rel="noopener noreferrer">fb</a>
       <a
-      className="navbar-item"
-              href="https://www.facebook.com/424onFairfax"
-              target="_blank"
-              rel="noopener noreferrer"
-          >fb</a>
-          <a
           className="navbar-item"
-                  href="https://www.instagram.com/fourtwofouronfairfax/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >ig</a>
-              <a
-              className="navbar-item"
-                      href="http://424onfairfax.tumblr.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                  >tb</a>
+          href="https://www.instagram.com/fourtwofouronfairfax/"
+          target="_blank"
+          rel="noopener noreferrer">ig</a>
+      <a
+          className="navbar-item"
+          href="http://424onfairfax.tumblr.com"
+          target="_blank"
+          rel="noopener noreferrer">tb</a>
       </div>
         
        </Menu>
@@ -150,13 +141,17 @@ var styles = {
   },
 
   bmItem: {
-  },
-  
-  bmOverlay: {
-    background: '#e30001'
+    
   },
 
+
+  // bmOverlay: {
+  //   background: '#e30001'
+  // },
+
   
+
+
 }
 
 
