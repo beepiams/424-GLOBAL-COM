@@ -24,4 +24,5 @@ intro:
     - image: /img/002-FW18-Lookbook/Shot-7_098.jpg
   heading: 
   description: >
+  
 ---

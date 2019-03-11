@@ -62,3 +62,6 @@ tags:
 ![](/img/014-424_x_BornxRaised/DSC06128.JPG)
 
 ![](/img/014-424_x_BornxRaised/DSC06135.JPG)
+
+###### Photographer: Mikey Estrada
+###### Model: Emil Waede
