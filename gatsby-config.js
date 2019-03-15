@@ -30,12 +30,15 @@ module.exports = {
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
               maxWidth: 1200,
+              tracedSVG: true,
+              linkImagesToOriginal: false,
             },
           },
           {
             resolve: 'gatsby-remark-copy-linked-files',
             options: {
               destinationDir: 'static',
+              
             }
           }
         ],

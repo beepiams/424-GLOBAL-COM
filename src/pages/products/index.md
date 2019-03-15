@@ -1,28 +1,38 @@
 ---
 templateKey: 'product-page'
 path: /products
-title: Lookbook
-featuredImage: /img/002-FW18-Lookbook/Shot-10-_014.jpg
-heading: 
-description: 
+title: SS19
+featuredImage: /img/013-424-SS19/992A8979.jpg
 intro:
   blurbs:
-    - image: /img/002-FW18-Lookbook/Shot-3-_125.jpg
+    - image: /img/013-424-SS19/992A9040.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-3-_200.jpg
+    - image: /img/013-424-SS19/992A9058.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-3-_317.jpg
+    - image: /img/013-424-SS19/992A9127.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-5_146.jpg
+    - image: /img/013-424-SS19/992A9178.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-7_098.jpg
+    - image: /img/013-424-SS19/992A9222.jpg
       text: > 
-    - image: /img/002-FW18-Lookbook/Shot-8_135-1.jpg
+    - image: /img/013-424-SS19/992A9298.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-9_031.jpg
+    - image: /img/013-424-SS19/992A9336.jpg
       text: >
-    - image: /img/002-FW18-Lookbook/Shot-7_098.jpg
+    - image: /img/013-424-SS19/992A9392.jpg
+      text: >
+    - image: /img/013-424-SS19/992A9522.jpg
+      text: >
+    - image: /img/013-424-SS19/992A9549.jpg
+      text: >
+    - image: /img/013-424-SS19/992A9585.jpg
+      text: >
+    - image: /img/013-424-SS19/992A9683.jpg
+      text: >
+    - image: /img/013-424-SS19/992A9868.jpg
   heading: 
-  description: >
+description: "Photographer: Alberto Colombo |
+Stylist: Matthew Henson | 
+Models: Jeff Owusu, Adriana Mora"
   
 ---

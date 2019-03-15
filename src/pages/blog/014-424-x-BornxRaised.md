@@ -2,8 +2,8 @@
 templateKey: blog-post
 title: 424 x BornxRaised Lookbok
 featuredImage: /img/014-424_x_BornxRaised/DSC05748.JPG
-date: 2019-12-20
-description:
+date: 2018-12-20
+description: "Photographer: Mikey Estrada | Model: Emil Waede"
 tags:
 ---
 
@@ -63,5 +63,3 @@ tags:
 
 ![](/img/014-424_x_BornxRaised/DSC06135.JPG)
 
-###### Photographer: Mikey Estrada
-###### Model: Emil Waede

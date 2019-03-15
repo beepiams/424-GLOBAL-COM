@@ -33,10 +33,14 @@ export const ProductPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     {heading}
                   </h3>
-                  <p>{description}</p>
+               
                 </div>
               </div>
               <Features gridItems={intro.blurbs} />
+              <p style={{ 
+                color: 'black',
+                fontSize: '11px',
+                textAlign: 'right'}}>{description}</p>
             </div>
           </div>
         </div>

@@ -34,6 +34,13 @@ export const BlogPostTemplate = ({
             
               <PostContent content={content} />
            
+              <p style={{ 
+                color: 'black',
+                fontSize: '11px',
+                textAlign: 'right'}}>
+                {description}
+              </p>
+
             </div>
           </div>
         </div>
