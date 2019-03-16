@@ -47,18 +47,19 @@ const TemplateWrapper = ({ children }) => (
         <div id="outer-container">
         <Menu left width={ 240 } styles={ styles } pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } >
         <Link className="navbar-item" to="/" 
-    activeStyle={{color: "black",
-    "background-color": '#e30001', }}   
+    activeStyle={{
+    "color": '#e30001', }}   
   >News</Link>  
   <Link className="navbar-item" to="/stockist" 
-  activeStyle={{color: "black",
-  "background-color": '#e30001', }}>Stockist</Link>
+  activeStyle={{
+  "color": '#e30001', }}>Stockist</Link>
   <Link className="navbar-item" to="/products" 
-  activeClassName={{  }}>Lookbook</Link>
+    activeStyle={{
+      "color": '#e30001',
+  }}>Lookbook</Link>
   <Link className="navbar-item" to="/contact" 
     activeStyle={{
-      color: "black",
-      "background-color": '#e30001',
+      "color": '#e30001',
     }}>Contact</Link>
     <a
     className="navbar-item"
