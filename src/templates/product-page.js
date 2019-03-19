@@ -12,12 +12,12 @@ export const ProductPageTemplate = ({
   description,
   intro,
 }) => (
-  <section className="section section--gradient ">
-    <div className="container">
+  <section className="section--gradient ">
+  <div className="margin-top-0">
       <div className="section">
         <div className="columns">
-          <div className="column is-12">
-            <div className="">
+          <div className="column is-full">
+            <div className="content">
                 <p
                   className=""
                   style={{ 
@@ -44,7 +44,7 @@ export const ProductPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
+    </div>
 
   </section>
 )

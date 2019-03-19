@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 424 fhux Mykita
+title: 424 faux Mykita
 featuredImage: /img/010-424-x-Mykita/MYKITA424_byDiegoAndrade_1.jpg
 date: 2017-04-28
 description:
