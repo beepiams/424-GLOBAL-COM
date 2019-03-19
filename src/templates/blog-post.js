@@ -18,12 +18,12 @@ export const BlogPostTemplate = ({
 
   return (
 
-  <section className="section section--gradient ">
+  <section className="section--gradient ">
   {helmet || ''}
-    <div className="container margin-top-0">
+    <div className="margin-top-0">
       <div className="section">
         <div className="columns">
-          <div className="column is-12">
+          <div className="column is-full">
             <div className="content">
               <p style={{ 
                 color: 'black',
