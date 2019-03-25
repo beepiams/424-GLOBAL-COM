@@ -53,10 +53,14 @@ const TemplateWrapper = ({ children }) => (
   <Link className="navbar-item" to="/stockist" 
   activeStyle={{
   "color": '#e30001', }}>Stockist</Link>
-  <Link className="navbar-item" to="/products" 
+  <Link className="navbar-item" to="/lookbook" 
     activeStyle={{
       "color": '#e30001',
   }}>Lookbook</Link>
+  <Link className="navbar-item" to="/products" 
+    activeStyle={{
+      "color": '#e30001',
+  }}>old Lookbook </Link>
   <Link className="navbar-item" to="/contact" 
     activeStyle={{
       "color": '#e30001',

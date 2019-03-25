@@ -75,7 +75,7 @@ const Navbar = class extends React.Component {
         </Link>
         <a
         className="navbar-item"
-                href="https://shop.fourtwofouronfairfax.com"
+                href="https://shop.fourtwofouronfairfax.com/collections/424"
                 target="_blank"
                 rel="noopener noreferrer"
             >Shop</a>
